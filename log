@@ -89,3 +89,20 @@ exercises.c:125:10: error: unused variable ‘pila_aux’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 2ae379a
+Wed 20 Mar 2024 06:36:20 PM UTC: 
+ exercises.c | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:134:26: error: comparison between pointer and integer [-Werror]
+  134 |         if(top(pila_aux) != '(') return 0;
+      |                          ^~
+exercises.c:140:26: error: comparison between pointer and integer [-Werror]
+  140 |         if(top(pila_aux) != '{') return 0;
+      |                          ^~
+exercises.c:146:26: error: comparison between pointer and integer [-Werror]
+  146 |         if(top(pila_aux) != '[') return 0;
+      |                          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+bcdc4b7
