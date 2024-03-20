@@ -57,3 +57,18 @@ Wed 20 Mar 2024 05:59:25 PM UTC:
  tests:  3|2
 total_score: 40/70
 b00bc3d
+Wed 20 Mar 2024 06:13:49 PM UTC: 
+ exercises.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:99:3: error: variable ‘pila_aux’ has initializer but incomplete type
+   99 |   Stack pila_aux = create_stack();
+      |   ^~~~~
+exercises.c:99:9: error: storage size of ‘pila_aux’ isn’t known
+   99 |   Stack pila_aux = create_stack();
+      |         ^~~~~~~~
+exercises.c:99:9: error: unused variable ‘pila_aux’ [-Werror=unused-variable]
+cc1: all warnings being treated as errors
+Compilation failed
+a6f244e
