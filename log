@@ -78,3 +78,14 @@ Wed 20 Mar 2024 06:14:13 PM UTC:
  tests:  4|1
 total_score: 50/70
 b7011c2
+Wed 20 Mar 2024 06:25:26 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:125:10: error: unused variable ‘pila_aux’ [-Werror=unused-variable]
+  125 |   Stack* pila_aux = create_stack();
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2ae379a
