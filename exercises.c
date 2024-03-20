@@ -59,7 +59,15 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   return 0;
+  int acumulador = 0;
+  List* ptr_lista = malloc(sizeof(List));
+  ptr_lista = first(L);
+  while(ptr_lista != NULL)
+    {
+      acumulador += (*ptr_lista);
+      ptr_lista = next(L);
+    }
+   return acumulador;
 }
 
 /*
