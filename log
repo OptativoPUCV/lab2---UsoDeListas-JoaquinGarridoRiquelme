@@ -106,3 +106,31 @@ exercises.c:146:26: error: comparison between pointer and integer [-Werror]
 cc1: all warnings being treated as errors
 Compilation failed
 bcdc4b7
+Wed 20 Mar 2024 06:36:59 PM UTC: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:130:14: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  130 |         push(*pila_aux, cadena);
+      |              ^~~~~~~~~
+exercises.c:134:16: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  134 |         if(top(*pila_aux) != '(') return 0;
+      |                ^~~~~~~~~
+exercises.c:135:13: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  135 |         pop(*pila_aux);
+      |             ^~~~~~~~~
+exercises.c:140:16: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  140 |         if(top(*pila_aux) != '{') return 0;
+      |                ^~~~~~~~~
+exercises.c:141:13: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  141 |         pop(*pila_aux);
+      |             ^~~~~~~~~
+exercises.c:146:16: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  146 |         if(top(*pila_aux) != '[') return 0;
+      |                ^~~~~~~~~
+exercises.c:147:13: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  147 |         pop(*pila_aux);
+      |             ^~~~~~~~~
+Compilation failed
+b3bf5e8
