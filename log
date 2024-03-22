@@ -275,3 +275,75 @@ exercises.c:124:32: note: expected ‘char’ but argument is of type ‘char *�
 cc1: all warnings being treated as errors
 Compilation failed
 2beace0
+Fri 22 Mar 2024 12:59:58 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:125:3: error: ‘StackpilaAux’ undeclared (first use in this function)
+  125 |   StackpilaAux = create_stack();
+      |   ^~~~~~~~~~~~
+exercises.c:125:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:128:27: error: invalid type argument of unary ‘*’ (have ‘int’)
+  128 |       if(cadena == '(' || *cadena == '[' || cadena == '{')
+      |                           ^~~~~~~
+exercises.c:130:16: error: ‘pilaAux’ undeclared (first use in this function)
+  130 |           push(pilaAux, cadena);
+      |                ^~~~~~~
+exercises.c:130:25: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  130 |           push(pilaAux, cadena);
+      |                         ^~~~~~
+      |                         |
+      |                         char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:143:11: error: ‘charcaracter’ undeclared (first use in this function)
+  143 |           charcaracter = top(pilaAux);
+      |           ^~~~~~~~~~~~
+exercises.c:144:14: error: ‘caracter’ undeclared (first use in this function)
+  144 |           if(caracter == '{') pop(pilaAux);
+      |              ^~~~~~~~
+test.c: In function ‘test_parentesis_balanceados’:
+test.c:217:31: error: passing argument 1 of ‘parentesisBalanceados’ makes integer from pointer without a cast [-Werror=int-conversion]
+  217 |     if(!parentesisBalanceados(s)){
+      |                               ^
+      |                               |
+      |                               char *
+In file included from test.c:5:
+exercises.c:124:32: note: expected ‘char’ but argument is of type ‘char *’
+  124 | int parentesisBalanceados(char cadena) {
+      |                           ~~~~~^~~~~~
+test.c:225:30: error: passing argument 1 of ‘parentesisBalanceados’ makes integer from pointer without a cast [-Werror=int-conversion]
+  225 |     if(parentesisBalanceados(s)){
+      |                              ^
+      |                              |
+      |                              char *
+In file included from test.c:5:
+exercises.c:124:32: note: expected ‘char’ but argument is of type ‘char *’
+  124 | int parentesisBalanceados(char cadena) {
+      |                           ~~~~~^~~~~~
+test.c:233:31: error: passing argument 1 of ‘parentesisBalanceados’ makes integer from pointer without a cast [-Werror=int-conversion]
+  233 |     if(!parentesisBalanceados(s)){
+      |                               ^
+      |                               |
+      |                               char *
+In file included from test.c:5:
+exercises.c:124:32: note: expected ‘char’ but argument is of type ‘char *’
+  124 | int parentesisBalanceados(char cadena) {
+      |                           ~~~~~^~~~~~
+test.c:241:30: error: passing argument 1 of ‘parentesisBalanceados’ makes integer from pointer without a cast [-Werror=int-conversion]
+  241 |     if(parentesisBalanceados(s)){
+      |                              ^
+      |                              |
+      |                              char *
+In file included from test.c:5:
+exercises.c:124:32: note: expected ‘char’ but argument is of type ‘char *’
+  124 | int parentesisBalanceados(char cadena) {
+      |                           ~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+65dbde7
