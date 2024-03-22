@@ -347,3 +347,9 @@ exercises.c:124:32: note: expected ‘char’ but argument is of type ‘char *�
 cc1: all warnings being treated as errors
 Compilation failed
 65dbde7
+Fri 22 Mar 2024 01:02:45 AM UTC: 
+ exercises.c | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+ tests:  9|0
+total_score: 70/70
+ab3826c
